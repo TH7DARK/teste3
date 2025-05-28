@@ -1,0 +1,18 @@
+# Configuração para o Render
+
+## Variáveis de ambiente para produção
+DATABASE_URL=sqlite:///prod.db
+SECRET_KEY=render-production-secret-key-change-in-dashboard
+JWT_SECRET_KEY=render-jwt-secret-key-change-in-dashboard
+FLASK_ENV=production
+PORT=8080
+
+## Instruções para deploy no Render
+# 1. Crie uma conta no Render (render.com)
+# 2. Crie um novo Web Service
+# 3. Conecte ao repositório Git
+# 4. Selecione o branch principal
+# 5. Selecione "Docker" como Runtime
+# 6. Configure as variáveis de ambiente no dashboard do Render
+# 7. Defina o nome do serviço e região
+# 8. Clique em "Create Web Service"
